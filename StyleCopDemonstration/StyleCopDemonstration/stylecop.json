@@ -1,0 +1,20 @@
+{
+	// Configuration guide: https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/Configuration.md
+	// stylecop.json is used to configure rule behavior. To (de-)activate rules and define rule sets, Visual Studio's internal code analyzing feature has to be used
+
+
+	"$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+	"settings": {
+		"documentationRules": {
+			"documentInternalElements": false // exmaple setting which deativates the default documentation enforcement for elements with internal visibility modifier
+		}
+	},
+	"exclude": [
+		"**/bin",
+		"**/bower_components",
+		"**/jspm_packages",
+		"**/node_modules",
+		"**/obj",
+		"**/platforms"
+	]
+}
